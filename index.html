@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="styles.css">
+    <link rel="stylesheet"href="font.css">
+    <script src="index.js"defer></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-start">
+                <p>Jovan Wong</p>
+            </div>
+            <div class="nav-end">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>    
+    </header>
+    
+    <section id="home">
+        <div id="home-anchor"></div>
+        <div class="hhero">
+            <p class="hintro">Hi, I'm Jovan</p>
+            <p class="hdesc">Full-time student • Working part-time • Tech Beginner</p>
+            <div class="hbuttons">
+                <a href="#contact"class="btn">Contact Me</a> 
+                <a href="/misc/Jovan_Resume.pdf"download class="download">Download Resume</a>
+                <a href="#projects"class="btn">My Projects</a>
+            </div>
+        </div>    
+    </section>
+    <section id="about">
+        <div class="ahero">
+            <div class="aintro">
+                About Me
+                <hr class="divider">
+            </div>
+            <div class="abody">
+                <p>I am 16 y/o, studying Aerospace Engineering in <a href="https://ite.edu.sg" target="_blank">ITE</a>. I am also currently working part-time at <a href="https://raduga.com.sg" target="_blank">Raduga Pte Ltd</a>.</p>
+                <p>I enjoy learning about tech like coding, networking, server building, etc. I currently have 2 <a href="#projects">projects</a> ongoing. </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="grid">
+            <div class="container1">
+                <div class="ptitle1">
+                    <p>Website</p>
+                </div>
+                <div class="pbody1">
+                    <p>I am currently developing two websites: this Portfolio and a mock <a href="https://j0vanwshopsite.netlify.app" target="_blank">Shopsite</a>.</p>
+                    <p>I have learnt basic HTML and CSS and I am still learning JavaScript. I have yet to implement authentication features such as login and signup, which would make the Shopsite more realistic.</p>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="ptitle2">
+                    <p>Home Server</p>
+                </div>
+                <div class="pbody2">
+                    <p>I'm currently running a server at home using an old laptop.</p>
+                    <p>Proxmox is the OS for the server where i have an LXC container running Docker containers such as Portainer, Minecraft, Filebrowser and Porttracker. Due to its limited hardware, I cannot host many services at once. I plan to upgrade the server in the future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">Skills</section>
+    <section id="contact">Contact</section>
+</body>
+</html>

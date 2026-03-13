@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    header {
+        display: none;
+    }
+}
+@media (min-width: 601px) {
+    #home-anchor {
+        display: block;
+        height: 67px;
+        margin-top: -67px;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: "CustomFont1";
+}
+
+
+header {
+    position: sticky;
+    top: 0%;
+}
+
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    padding: 15px 100px 15px 100px;
+}
+.nav-start {
+    color: deepskyblue;
+    font-size: clamp(15px, 3vw, 30px);
+}
+.nav-start,
+.nav-end {
+    display: flex;
+    gap: 50px;
+    font-weight: bold;
+}
+.nav-end a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(15px, 3vw, 21px);
+    padding-bottom: 10px;
+    transition: color 0.5s ease, border-color 0.5s ease;
+}
+nav a.active {
+    color: deepskyblue;
+    border-bottom: 2px solid deepskyblue;
+}
+nav a:hover {
+    color: deepskyblue;
+    border-bottom: 2px solid deepskyblue;
+}
+
+
+section {
+    height: 100vh;
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: bold;
+    scroll-margin-top: 67px;
+}
+#home,
+#about,
+#projects,
+#skills,
+#contact {
+    background: linear-gradient(45deg, #000000, #000000cb, #000000);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.hhero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    text-align: center;
+    gap: 10px;
+}
+.hhero .hintro {
+    font-size: clamp(30px, 4vw, 60px); 
+    color: deepskyblue;
+}
+.hhero .hdesc {
+    font-size: clamp(15px, 4vw, 30px);
+    color: white;
+}
+.hhero .hbuttons {
+    display: flex;
+    gap: clamp(10px, 3vw, 20px);
+    padding-top: 10px;
+}
+.hhero .hbuttons a {
+    border: 3px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    padding: clamp(5px, 3vw, 10px) clamp(10px, 3vw, 20px);
+    font-size: clamp(5px, 3vw, 25px);
+}
+.hhero .hbuttons .download {
+    border-color: deepskyblue;
+    color: deepskyblue;
+}
+.hhero .hbuttons .download:hover {
+    background-color: deepskyblue;
+    border-color: white;
+    color: white;
+}
+.hhero .hbuttons a:hover {
+    color: deepskyblue;
+    border-color: deepskyblue;
+}
+.hhero .hintro,
+.hhero .hdesc {
+    display: block;
+    height: auto;
+}
+
+
+
+
+.ahero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.aintro {
+    color: deepskyblue;
+    font-size: clamp(30px, 4vw, 60px);
+    margin-bottom: 50px;
+}
+.abody {
+    color: white;
+    max-width: 80%;
+}
+.abody a {
+    color: white;
+}
+.abody a:hover {
+    color: cyan;
+}
+.abody p {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: deepskyblue;
+    border: none;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+}
+.container1,
+.container2 {
+    height: 100vh;
+}
+.container1 {
+    border-right: 1px solid white;
+    color: white;
+}
+.container2 {
+    border-left: 1px solid white;
+    color: white;
+}
+
+.ptitle1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto 0 auto;
+    padding-bottom: 10px;
+    max-width: 20%;
+    border-bottom: 2px solid white;
+}
+.ptitle2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto 0 auto;
+    padding-bottom: 10px;
+    max-width: 30%;
+    border-bottom: 2px solid white;
+}
+.pbody1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 90%;
+    height: 85vh;
+}
+.pbody1 p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pbody2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 90%;
+    height: 85vh;
+}
+.pbody2 p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
