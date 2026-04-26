@@ -23,3 +23,22 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
+
+
+
+
+function showPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+window.onload = showPopup;
+
+window.onclick = function(e) {
+    const popup = document.getElementById("popup");
+    if (e.target === popup) {
+        popup.style.display = "none";
+    }
+}

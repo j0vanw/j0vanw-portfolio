@@ -15,7 +15,58 @@
         margin-top: -67px;
     }
 }
-
+version {
+    font-size: 15px;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+.popup-box {
+    color: deepskyblue;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 0 15px cyan, 0 0 40px rgba(0, 255, 255, 0.5);
+    animation: popIn 0.3s ease;
+    animation: glow 2s infinite;
+}
+.popup-box h1 {
+    margin-bottom: 15px;
+}
+.popup-box p {
+    font-size: 20px;
+}
+.popup-box button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: white 2px solid;
+    border-radius: 12px;
+    background: none;
+    color: deepskyblue;
+    cursor: pointer;
+}
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+}
+@keyframes glow {
+    0% { box-shadow: 0 0 10px cyan;}
+    50% { box-shadow: 0 0 25px cyan;}
+    100% { box-shadow: 0 0 10px cyan;}
+}
 
 html {
     scroll-behavior: smooth;
@@ -72,6 +123,7 @@ section {
 }
 #home,
 #about,
+#education,
 #projects,
 #skills,
 #contact {
@@ -145,7 +197,6 @@ section {
     justify-content: center;
     align-items: center;
 }
-
 .aintro {
     color: deepskyblue;
     font-size: clamp(30px, 4vw, 60px);
@@ -173,6 +224,103 @@ section {
     border: none;
     margin: 10px auto 0 auto;
     border-radius: 2px;
+}
+
+
+
+
+.ehero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.eintro {
+    color: deepskyblue;
+    font-size: clamp(30px, 4vw, 60px);
+    margin-bottom: 50px;
+}
+.ebody {
+    color: white;
+    max-width: 80%;
+}
+.ebody pIndex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    color: cyan;
+    margin-bottom: 10px;
+}
+.ebody pSchool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    color: skyblue;
+}
+.subjects {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.BSS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ITE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ITEcca {
+    display: flex;
+    align-items: flex-start;
+    gap: 55px;
+    margin-left: 150px;
+}
+.ITElabel {
+    width: 45px;
+    font-weight: bold;
+}
+.ITEitems {
+    display: inline-block;
+}
+.BSScca {
+    display: flex;
+    flex-direction: center;
+    gap: 55px;
+}
+.BSSlabel {
+    width: 45px;
+    font-weight: bold;
+}
+.BSSitems {
+    display: inline-block;
+}
+.rank {
+    display: block;
+    margin-left: 15px;
+}
+.sub-rank {
+    display: block;
+    margin-left: 30px;
+}
+.details {
+    display: block;
+    margin-left: 15px;
+}
+.sub-details {
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 2dvh;
 }
 
 
@@ -231,6 +379,9 @@ section {
 .pbody1 p {
     line-height: 1.6;
     margin-bottom: 20px;
+}
+.pbody1 a {
+    color: deepskyblue;
 }
 
 .pbody2 {
